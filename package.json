@@ -1,6 +1,6 @@
 {
   "name": "cx-amazon-seller",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A pi package that tells the model the person it talks with runs a business selling on Amazon.",
   "license": "MIT",
   "author": "ComChatX",
