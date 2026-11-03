@@ -14,7 +14,7 @@ it("the pinned pi loads the extension from the built dist/ and its section joins
   expect(errors).toEqual([]);
   expect(extensions.map((extension) => extension.path)).toEqual([join(ROOT, "dist", "extensions", "amazon-seller.js")]);
   expect(extensions.map((extension) => [...extension.handlers.keys()])).toEqual([["before_agent_start"]]);
-  const { systemPromptOptions } = await runner.emitBeforeAgentStart("Hello", undefined, { cwd: "/project" });
+  const { systemPromptOptions } = await runner.emitBeforeAgentStart({ messageType: "user", prompt: "Hello" }, { cwd: "/project" });
   expect(systemPromptOptions.sections).toMatchObject({ "cx-amazon-seller": SELLER });
   expect(systemPromptOptions.forceSystemPrompt).toBeUndefined();
 });
