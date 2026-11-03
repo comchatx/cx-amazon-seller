@@ -1,9 +1,19 @@
 {
   "name": "cx-amazon-seller",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A pi package that tells the model the person it talks with runs a business selling on Amazon.",
   "license": "MIT",
   "author": "ComChatX",
+  "comchatx": {
+    "description": {
+      "zh": "根据你的亚马逊业务回答问题、处理任务。"
+    },
+    "mark": {
+      "line": "bag"
+    },
+    "section": "extensions",
+    "order": 60
+  },
   "homepage": "https://github.com/comchatx/cx-amazon-seller#readme",
   "repository": {
     "type": "git",
