@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+- The package's `description`, which the Plugins page draws as the English card line, speaks to a seller: "Handles questions and tasks for your Amazon business." It said "A pi package that tells the model the person it talks with runs a business selling on Amazon."
+
 ## 0.1.3
 
 - The README in Chinese, `README.zh-CN.md`, which the Plugins page draws as the Overview in Chinese.
