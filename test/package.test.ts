@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -31,4 +32,11 @@ it("the comchatx field is the card the product's catalogue record draws", async 
   const { readFileSync } = await import("node:fs");
   const manifest = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as Record<string, unknown>;
   expect(manifest["comchatx"]).toEqual({"description":{"zh":"根据你的亚马逊业务回答问题、处理任务。"},"mark":{"line":"bag"},"section":"extensions","order":60});
+});
+
+it("ships its README in English and in Chinese", () => {
+  // npm 12 keys its answer by the package's name; earlier ones answer a list.
+  const answer = JSON.parse(execFileSync("npm", ["pack", "--dry-run", "--json", "--ignore-scripts"], { cwd: ROOT, encoding: "utf8" })) as { files: { path: string }[] }[] | Record<string, { files: { path: string }[] }>;
+  const packed = Array.isArray(answer) ? answer : Object.values(answer);
+  expect(packed[0]!.files.map((file) => file.path)).toEqual(expect.arrayContaining(["README.md", "README.zh-CN.md"]));
 });
