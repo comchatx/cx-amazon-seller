@@ -31,7 +31,7 @@ it("the build refuses a test under src/extensions/, which pi would load as an ex
 it("the comchatx field is the card the product's catalogue record draws", async () => {
   const { readFileSync } = await import("node:fs");
   const manifest = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as Record<string, unknown>;
-  expect(manifest["comchatx"]).toEqual({"description":{"zh":"根据你的亚马逊业务回答问题、处理任务。"},"mark":{"line":"bag"},"section":"extensions","order":60});
+  expect(manifest["comchatx"]).toEqual({"about":"根据你的亚马逊业务回答问题、处理任务。","mark":{"line":"bag"},"section":"extensions","order":60});
 });
 
 it("ships its README in English and in Chinese", () => {

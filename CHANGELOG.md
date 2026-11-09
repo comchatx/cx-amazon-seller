@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- The card's Chinese line is `comchatx.about`, the field the Plugins page reads, in place of `comchatx.description.zh`. Its words are unchanged.
+
 ## 0.1.4
 
 - The package's `description`, which the Plugins page draws as the English card line, speaks to a seller: "Handles questions and tasks for your Amazon business." It said "A pi package that tells the model the person it talks with runs a business selling on Amazon."
