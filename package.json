@@ -1,13 +1,11 @@
 {
   "name": "cx-amazon-seller",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Handles questions and tasks for your Amazon business.",
   "license": "MIT",
   "author": "ComChatX",
   "comchatx": {
-    "description": {
-      "zh": "根据你的亚马逊业务回答问题、处理任务。"
-    },
+    "about": "根据你的亚马逊业务回答问题、处理任务。",
     "mark": {
       "line": "bag"
     },
