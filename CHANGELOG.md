@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.6
+
+- The card's line and the Overview, in English and Chinese, are the words signed on 2026-11-10: "Tells cx you sell on Amazon and come to it for your store." as npm's `description`, and 「告诉 cx 你在亚马逊开店，来找它是为了店里的事。」 as `comchatx.about`. They said "Handles questions and tasks for your Amazon business." and 「根据你的亚马逊业务回答问题、处理任务。」.
+- What only a developer reads moved from the README to `DEVELOPING.md`: the opening description and "What it needs", "Install", "Develop", "Licence".
+
 ## 0.1.5
 
 - The card's Chinese line is `comchatx.about`, the field the Plugins page reads, in place of `comchatx.description.zh`. Its words are unchanged.
