@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.7
+
+- The card's name is the one signed on 2026-11-11, "Amazon Seller Profile", in `comchatx.name`, the same on the Chinese and the English page.
+
 ## 0.1.6
 
 - The card's line and the Overview, in English and Chinese, are the words signed on 2026-11-10: "Tells cx you sell on Amazon and come to it for your store." as npm's `description`, and 「告诉 cx 你在亚马逊开店，来找它是为了店里的事。」 as `comchatx.about`. They said "Handles questions and tasks for your Amazon business." and 「根据你的亚马逊业务回答问题、处理任务。」.
