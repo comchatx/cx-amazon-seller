@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.8
+
+- The card's name is the one signed on 2026-11-17: "Amazon Core" on the English page (`comchatx.name`) and 「亚马逊基础功能」 on the Chinese page (`comchatx.nameZh`).
+- The README, in English and Chinese, calls each plugin of ours it names by the card's name signed on 2026-11-17.
+- The README names each other plugin it speaks of by the card's name in its own language, a link to that plugin's page on npm, never by the npm name.
+
 ## 0.1.7
 
 - The card's name is the one signed on 2026-11-11, "Amazon Seller Profile", in `comchatx.name`, the same on the Chinese and the English page.

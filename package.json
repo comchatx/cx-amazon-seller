@@ -1,11 +1,12 @@
 {
   "name": "cx-amazon-seller",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Tells cx you sell on Amazon and come to it for your store.",
   "license": "MIT",
   "author": "ComChatX",
   "comchatx": {
-    "name": "Amazon Seller Profile",
+    "name": "Amazon Core",
+    "nameZh": "亚马逊基础功能",
     "about": "告诉 cx 你在亚马逊开店，来找它是为了店里的事。",
     "mark": {
       "line": "bag"
