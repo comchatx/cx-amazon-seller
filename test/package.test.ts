@@ -31,7 +31,7 @@ it("the build refuses a test under src/extensions/, which pi would load as an ex
 it("the comchatx field is the card the product's catalogue record draws", async () => {
   const { readFileSync } = await import("node:fs");
   const manifest = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as Record<string, unknown>;
-  expect(manifest["comchatx"]).toEqual({"name":"Amazon Core","nameZh":"亚马逊基础功能","about":"告诉 cx 你在亚马逊开店，来找它是为了店里的事。","mark":{"line":"bag"},"section":"extensions","order":60});
+  expect(manifest["comchatx"]).toEqual({"name":"Amazon Core","nameZh":"亚马逊基础功能","about":"告诉 cx 你在亚马逊开店，来找它是为了店里的事。","mark":{"draw":[{"d":"M4.4 3.5h15.2l2 5.6H2.4zM2.6 10a2.35 2.35 0 0 0 4.7 0zM7.35 10a2.35 2.35 0 0 0 4.7 0zM12.1 10a2.35 2.35 0 0 0 4.7 0zM16.85 10a2.35 2.35 0 0 0 4.7 0z"},{"d":"M5.2 13.5h13.6a1 1 0 0 1 1 1v5.1a1 1 0 0 1 -1 1h-13.6a1 1 0 0 1 -1 -1v-5.1a1 1 0 0 1 1 -1zM9.8 15.4h4.4v5.2H9.8z","rule":"evenodd"}]},"section":"extensions","order":60});
 });
 
 it("ships its README in English and in Chinese", () => {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.9
+
+- The tile's mark on the Plugins page is the signed drawing.
+
 ## 0.1.8
 
 - The card's name is the one signed on 2026-11-17: "Amazon Core" on the English page (`comchatx.name`) and 「亚马逊基础功能」 on the Chinese page (`comchatx.nameZh`).
